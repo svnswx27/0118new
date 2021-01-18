@@ -1,0 +1,508 @@
+@media screen and (min-width:768px){
+    
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background-color:rgb(45, 45, 45);
+}
+.side-menu{
+    position: relative;
+	width: 200px;
+	height: 100%;
+	padding: 50px 0;
+	box-sizing: border-box;
+	background-color: rgba(45,45,45, 0.8);
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 0px 5px hsla(45, 45, 45,0.4);
+    transform: translateX(0);
+}
+
+.side-menu .media{
+	display: flex;
+	margin: 10px 10px ;
+}
+.side-menu .media img{
+	position: relative;
+	top: -35px;
+	left: 65px;
+}
+.side-menu .media-body{
+	position: relative;
+	left: 0px;
+	top: 20px;
+}
+
+.logo-content a{
+	color: white;
+	text-decoration: none;
+}
+
+/* .side-menu form{
+	display: flex;
+	margin: 0 10px 50px;
+	border-radius: 100px;
+	border:1px solid rgb(255,255,255,.4);
+}
+.side-menu form input,
+.side-menu form button{
+	border:none;
+	background-color: transparent;
+	color: #fff;
+	padding: 5px 10px;
+}
+.side-menu form input{
+	width: 130px;
+}
+input::-webkit-input-placeholder {
+    font-size:14px;
+    color: rgb(206, 206, 206);
+}
+input::-moz-input-placeholder {
+    font-size:14px;
+    color: rgb(206, 206, 206);
+}
+input::-ms-input-placeholder {
+    font-size:14px;
+    color: rgb(206, 206, 206);
+} */
+.side-menu form button{
+	width: 50px;
+}
+.side-menu form input:focus,
+.side-menu form button:focus{
+	outline: none;
+}
+.side-menu label{
+    position:absolute;
+    width: 30px;
+    height: 80px;
+    background-color: rgba(45, 45,45,0.5);
+    color: white;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+}
+#side-menu-switch{
+	position: absolute;
+	opacity: 0;
+}
+
+#side-menu-switch:checked+ .side-menu{
+	transform: translateX(0);
+}
+nav a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+nav a + a:before{
+	content: '';
+	position: absolute;
+	border-top: 1px solid rgb(255,255,255,.4);
+	left: 10px;
+	right: 10px;
+	top: 0;
+}
+nav a img{
+	margin-right: -1.1em;
+	transform: scale(0);
+	transition: .3s;
+}
+nav a:hover img{
+	margin-right: 0em;
+	transform: scale(1);
+}
+
+
+}
+
+
+.side-menu .logo{
+	display: flex;
+	position: relative;
+	top: -30px;
+}
+.side-menu .logo img{
+	display: flex;
+	position: relative;
+	top: -15px;
+}
+.side-menu .logo-content{
+	color: white;
+}
+
+.form2{
+  color: gray;
+}
+
+body{
+	background-image: url(../png/taiwan2.png);
+}
+
+@keyframes amos{
+ 0%{transform: scale(1);}
+ 100%{transform: scale(4);}
+}
+.signal{
+ width: 10px;
+ height: 10px;
+ background-color: rgba(255, 0, 0, 0.555);
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 520px;
+ right: 635px;
+ animation: amos .5s infinite alternate;
+}
+
+.Richter-Scale7{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #c30d23;
+  position: absolute;
+  top: 420px;
+  right: 10px;
+
+}
+
+.Richter-Scale6{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:#e07019;
+  position: absolute;
+  top: 470px;
+  right: 10px;
+
+}
+
+.Richter-Scale5{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:#e1b821;
+  position: absolute;
+  top: 520px;
+  right: 10px;
+
+}
+
+.Richter-Scale4{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:#ece93a;
+  position: absolute;
+  top: 570px;
+  right: 10px;
+
+}
+
+.Richter-Scale3{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:#f7f8f8;
+  position: absolute;
+  top: 620px;
+  right: 10px;
+
+}
+
+
+.Signal{
+ width: 10px;
+ height: 10px;
+ background-color: rgb(255, 0, 0);
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 520px;
+ right: 635px;
+}
+
+.Earthquake-Information{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:rgb(50, 50, 50);
+  box-shadow:3px 3px 5px black;
+  -webkit-box-shadow:3px 3px 5px black;
+  -moz-box-shadow:3px 3px 5px black;
+  position: absolute;
+  top: 200px;
+  right: 10px;
+}
+
+.next{
+  background-color: rgb(251, 72, 1);
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 680px;
+  right: 10px;
+}
+/* .Earthquake-zone7-1{
+ width: 15px;
+ height: 15px;
+ background-color: #c30d23;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 480px;
+ right: 678px;
+}
+
+.Earthquake-zone6-1{
+ width: 10px;
+ height: 10px;
+ background-color: #e07019;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 385px;
+ right: 595px;
+}
+
+.Earthquake-zone5-1{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 455px;
+ right: 610px;
+}
+
+.Earthquake-zone5-2{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 460px;
+ right: 620px;
+}
+
+.Earthquake-zone5-3{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 435px;
+ right: 610px;
+}
+
+.Earthquake-zone5-4{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 470px;
+ right: 685px;
+}
+
+.Earthquake-zone5-5{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 465px;
+ right: 698px;
+}
+
+.Earthquake-zone5-6{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 468px;
+ right: 715px;
+}
+
+.Earthquake-zone5-7{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 487px;
+ right: 693px;
+}
+
+.Earthquake-zone5-8{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 490px;
+ right: 700px;
+}
+
+.Earthquake-zone5-9{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 530px;
+ right: 650px;
+}
+
+.Earthquake-zone5-10{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 545px;
+ right: 600px;
+}
+
+.Earthquake-zone5-11{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 380px;
+ right: 700px;
+}
+
+.Earthquake-zone5-12{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 410px;
+ right: 700px;
+}
+
+.Earthquake-zone5-13{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 410px;
+ right: 670px;
+}
+
+.Earthquake-zone5-14{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 410px;
+ right: 700px;
+}
+
+.Earthquake-zone5-15{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 400px;
+ right: 570px;
+}
+
+.Earthquake-zone5-16{
+ width: 10px;
+ height: 10px;
+ background-color: #e1b821;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 385px;
+ right: 585px;
+}
+
+.Earthquake-zone4-1{
+ width: 10px;
+ height: 10px;
+ background-color: #ece93a;
+ position: absolute;
+ display: flex;
+ border-radius: 50%;
+ top: 500px;
+ right: 650px;
+} */
